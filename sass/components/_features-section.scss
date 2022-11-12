@@ -1,0 +1,43 @@
+.features-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &__title {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.14;
+            text-transform: uppercase;
+    
+            margin-bottom: 10px;
+        }
+    
+    &__text {
+            color: var(--secondary-text-color);
+    
+            font-size: 14px;
+            line-height: 1.71;
+        }
+    
+    &__icon {
+            background-color: var(--secondary-gray-color);
+    
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+            margin-bottom: 30px;
+            width: 270px;
+            height: 120px;
+        }
+    
+    &__list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+    
+    &__item {
+            max-width: 270px;
+        }
+}

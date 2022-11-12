@@ -1,0 +1,59 @@
+.contact-form {
+    &__text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.15;
+        text-align: center;
+        letter-spacing: 0.03em;
+        margin-bottom: 12px;
+    }
+}
+
+
+.form-label {
+    color: var(--secondary-text-color);
+
+    display: block;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    margin-bottom: 4px;
+}
+
+.form-control {
+    position: relative;
+    margin-bottom: 10px;
+
+    &__input {
+            border: 1px solid rgba(33, 33, 33, 0.2);
+            border-radius: 4px;
+            width: 100%;
+    
+            padding: 12px 12px 12px 42px;
+            outline: none;
+            cursor: pointer;
+        }
+    
+    &__input:focus {
+            border-color: var(--accent-color);
+    
+            transition: border-color 250ms var(--timing-function);
+        }
+    
+    &__input:focus+.form-control__icon {
+            fill: var(--accent-color);
+    
+            transition: fill 250ms var(--timing-function);
+        }
+    
+    &__icon {
+            position: absolute;
+            left: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+}

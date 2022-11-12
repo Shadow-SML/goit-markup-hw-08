@@ -1,0 +1,14 @@
+.modal {
+    background-color: var(--primary-white-color);
+    box-shadow: $modal-box-shadow;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 528px;
+    border-radius: 4px;
+    padding: 40px;
+
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms var(--timing-function);
+}
