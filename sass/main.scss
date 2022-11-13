@@ -1,6 +1,8 @@
 @import "./utils/vars";
 @import "./utils/visualiy-hidden";
 @import "./base/global-styles";
+@import "./base/container";
+@import "./base/title-styles";
 
 // @import "./components/about-section";
 // @import "./components/backdrop";
@@ -8,8 +10,6 @@
 // @import "./components/checkbox";
 // @import "./components/clients-section";
 @import "./components/header";
-@import "./components/header-contacts-list";
-@import "./components/header-site-nav";
 // @import "./components/features-section";
 // @import "./components/filter-button";
 // @import "./components/footer-container";

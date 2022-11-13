@@ -6,6 +6,11 @@
     cursor: pointer;
     padding: 0;
 
+    @media screen and (min-width: $tablet) {
+            display: none;
+        }
+    
+
     &:hover,
     &:focus {
         fill: var(--accent-color);
