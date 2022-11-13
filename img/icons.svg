@@ -80,7 +80,7 @@
     <symbol id="icon-check-form" viewBox="0 0 16 15">
       <path stroke-width=".2" d="m3.957 7.752-.069-.066-1.033.979 3.641 3.473 7.649-7.297-1.027-.979-6.623 6.312-2.539-2.422z"/>
     </symbol>
-    <symbol id="icon-menu_40px" viewBox="0 0 40 40">
+    <symbol id="icon-menu" viewBox="0 0 40 40">
       <path d="M8 14.667v-2.667h24v2.667h-24zM8 21.333h24v-2.667h-24v2.667zM8 28h24v-2.667h-24v2.667z"></path>
     </symbol>
   </defs>

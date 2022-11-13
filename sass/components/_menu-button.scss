@@ -1,0 +1,15 @@
+.menu-button {
+    background: var(--primary-white-color);
+    
+    border: none;
+    fill: var(--logo-black-color);
+    cursor: pointer;
+    padding: 0;
+
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+
+        transition: fill $transition-dur var(--timing-function);
+    }
+}

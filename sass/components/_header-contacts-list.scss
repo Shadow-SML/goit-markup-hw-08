@@ -3,6 +3,10 @@
     flex-wrap: wrap;
     gap: 50px;
 
+    @media screen and (max-width: $mobile) {
+        display: none;
+        }
+
     &__link {
             color: var(--secondary-text-color);
     

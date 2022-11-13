@@ -4,6 +4,23 @@
     flex-grow: 1;
     gap: 93px;
 
+    @media screen and (max-width: $mobile) {
+            justify-content: space-between;
+            gap: 15px;
+        }
+
+    &__list {
+            display: flex;
+            justify-content: space-between;
+            gap: 50px;
+            min-height: 80px;
+            align-items: center;
+    
+            @media screen and (max-width: $mobile) {
+                display: none;
+            }
+        }
+
     &__link {
         color: var(--title-text-color);
 
@@ -41,13 +58,5 @@
         height: 4px;
         background-color: var(--accent-color);
         border-radius: 2px;
-    }
-    
-    &__list {
-        display: flex;
-        justify-content: space-between;
-        gap: 50px;
-        min-height: 80px;
-        align-items: center;
     }
 }
