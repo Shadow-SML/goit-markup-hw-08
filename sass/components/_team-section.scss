@@ -15,12 +15,6 @@
 
     &__item {
             background-color: var(--primary-white-color);
-        // width: 450px;
-        // height: 622px;
-
-        @media screen and (min-width: $desktop) {
-            
-        }
         }
     
     &__title {
@@ -30,7 +24,6 @@
     
             margin-bottom: 10px;
             text-align: center;
-
         }
     
     &__text {

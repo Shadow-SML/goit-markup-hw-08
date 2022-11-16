@@ -6,25 +6,46 @@
 
 .footer-box {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 93px;
+    gap: 60px;
     align-items: baseline;
+
+    @media screen and (min-width: $desktop) {
+            // gap: 93px;
+        }
+
+    @media screen and (min-width: $desktop) {
+        align-items: flex-start;
+        flex-direction: row;
+        gap: 93px;
+    }
 }
 
 .footer-address {
     display: flex;
+    align-items: center;
     flex-direction: column;
     gap: 20px;
 
+    @media screen and (min-width: $desktop) {
+            align-items: flex-start;
+        }
+
     &__list {
             display: flex;
+            align-items: center;
             flex-direction: column;
             gap: 9px;
+
+        @media screen and (min-width: $desktop) {
+                align-items: flex-start;
+            }
         }
     
     &__link-map {
             color: var(--primary-white-color);
-    
+            align-items: center;
             font-size: 14px;
             line-height: 1.7;
         }
@@ -63,8 +84,14 @@
 
 .footer-net {
     display: flex;
+    align-items: center;
     flex-direction: column;
     gap: 20px;
+
+
+    @media screen and (min-width: $desktop) {
+            align-items: flex-start;
+        }
 
     &__list {
             display: flex;
@@ -92,15 +119,27 @@
 
 .footer-form-container {
     display: flex;
+    align-items: center;
     flex-direction: column;
     gap: 20px;
+
+@media screen and (min-width: $desktop) {
+        align-items: flex-start;
+    }
 }
 
 .footer-form {
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
-    flex-direction: row;
-    gap: 12px;
+    flex-direction: column;
+    gap: 20px;
+
+    @media screen and (min-width: $desktop) {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 12px;
+        }
 
     &__input {
             color: var(--primary-white-color);
@@ -109,10 +148,14 @@
             border: 1px solid $footer-form-input-border;
             filter: drop-shadow $footer-form-input-drop-shadow;
             border-radius: 4px;
-            width: 358px;
+            width: 450px;
             height: 50px;
             padding: 15px 16px;
             cursor: pointer;
+
+        @media screen and (min-width: $desktop) {
+                width: 358px;
+            }
         }
     
     &__send-button {
