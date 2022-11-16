@@ -701,6 +701,31 @@ body {
   }
 }
 
+.foter-addres-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 60px;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+@media screen and (min-width: 768px) {
+  .foter-addres-box {
+    gap: 165px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .foter-addres-box {
+    gap: 93px;
+  }
+}
+
 .footer-address {
   display: -webkit-box;
   display: -ms-flexbox;
