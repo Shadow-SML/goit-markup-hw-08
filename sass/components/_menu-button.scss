@@ -1,20 +1,46 @@
 .menu-button {
-    background: var(--primary-white-color);
+    background-color: transparent;
     
     border: none;
     fill: var(--logo-black-color);
     cursor: pointer;
+
+    top: 10px;
+    right: 15px;
     padding: 0;
 
     @media screen and (min-width: $tablet) {
             display: none;
+
         }
     
-
     &:hover,
     &:focus {
         fill: var(--accent-color);
 
         transition: fill $transition-dur var(--timing-function);
     }
+}
+
+.close-menu-button {
+    background-color: transparent;
+    
+        border: none;
+        fill: var(--logo-black-color);
+        cursor: pointer;
+
+        padding: 0; 
+        
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        display: flex;
+
+        &:hover,
+        &:focus {
+            fill: var(--accent-color);
+
+            transition: fill $transition-dur var(--timing-function);
+        }
+        
 }
