@@ -1,6 +1,10 @@
 .team-section {
     background-color: var(--secondary-gray-color);
-    padding: 94px 0;
+    padding: 60px 0;
+
+    @media screen and (min-width: $desktop) {
+        padding: 94px 0;
+    }
 }
 
 .team-list {
@@ -11,6 +15,12 @@
 
     &__item {
             background-color: var(--primary-white-color);
+        // width: 450px;
+        // height: 622px;
+
+        @media screen and (min-width: $desktop) {
+            
+        }
         }
     
     &__title {
@@ -20,6 +30,7 @@
     
             margin-bottom: 10px;
             text-align: center;
+
         }
     
     &__text {
@@ -34,12 +45,29 @@
     
     &__image {
             display: block;
+                width: 450px;
+
+            @media screen and (min-width: $tablet) {
+                width: 354px;
+            }
+
+            @media screen and (min-width: $desktop) {
+                width: 270px;
+            }
         }
     
     &__container {
-            padding: 30px;
+            padding: 30px 122px 24px 122px;
             background-color: var(--primary-white-color);
             box-shadow: $modal-box-shadow;
             border-radius: 0px 0px 4px 4px;
+
+            @media screen and (min-width: $tablet) {
+                    padding: 30px 74px 24px 74px;
+                }
+            
+            @media screen and (min-width: $desktop) {
+                    padding: 30px 32px;
+                }
         }
 }
