@@ -164,7 +164,9 @@
             border: 1px solid $footer-form-input-border;
             filter: drop-shadow $footer-form-input-drop-shadow;
             border-radius: 4px;
-            width: 450px;
+            display: block;
+            width: 100%;
+            // width: 450px;
             height: 50px;
             padding: 15px 16px;
             cursor: pointer;

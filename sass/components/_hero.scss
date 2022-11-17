@@ -1,15 +1,75 @@
 .hero {
     background-color: var(--secondary-footer-color);
    
-    background-image: $hero-background-image-linear-gradient;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin: 0 auto;
+    // background-image: $hero-background-image-linear-gradient, url(..//img/hero-image.jpg);
 
-    height: 400px;
-    max-width: 480px;
-    padding: 118px 0;
+    // background-size: cover;
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // margin: 0 auto;
+
+    // height: 400px;
+    // max-width: 480px;
+    // padding: 118px 0;
+
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+//mobile image
+    @media screen and (max-width: 767px) {
+            background-image: $hero-background-image-linear-gradient,
+                url("../img/hero-image-mobile.jpg");
+    
+            width: 480px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 118px 0 118px 0;
+    
+    @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+            screen and (min-resolution: 192dpi) and (max-width: 767px) {
+                background-image: $hero-background-image-linear-gradient,
+                    url("../img/hero-image-mobile@2x.jpg");
+    
+    
+            }
+        }
+
+//tablet image
+    @media screen and (min-width: $tablet) {
+            background-image: $hero-background-image-linear-gradient,
+                url("../img/hero-image-tablet.jpg");
+            max-width: 768px;
+            padding: 118px 0 118px 0;
+            background-repeat: no-repeat;
+            background-size: cover;
+    
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: $tablet),
+            screen and (min-resolution: 192dpi) and (min-width: 768px) {
+                background-image: $hero-background-image-linear-gradient,
+                    url("../img/hero-image-tablet@2x.jpg");
+    
+            }
+        }
+
+//desktop image
+    @media screen and (min-width: 1200px) {
+        background-image: $hero-background-image-linear-gradient,
+            url("../img/hero-image.jpg");
+        padding: 200px 0 200px 0;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: auto;
+        max-width: 1600px;
+
+        @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+        screen and (min-resolution: 192dpi) and (min-width: 1200px) {
+            background-image: $hero-background-image-linear-gradient,
+                url("../img/hero-image@2x.jpg");
+    }
+}
 
     @media screen and (min-width: $tablet) {
             height: 400px;
