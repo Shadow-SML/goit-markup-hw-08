@@ -1,5 +1,10 @@
 .team-section {
     background-color: var(--secondary-gray-color);
+    
+    min-width: 479px;
+    text-align: center;
+    margin: 0 auto;
+    height: auto;
     padding: 60px 0;
 
     @media screen and (min-width: $desktop) {
@@ -10,7 +15,7 @@
 .team-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    // justify-content: center;
     gap: 30px;
 
     &__item {
