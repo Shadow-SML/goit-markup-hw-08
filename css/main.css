@@ -737,7 +737,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 50px;
+  gap: 97px;
 }
 @media screen and (max-width: 768px) {
   .header__container {
@@ -766,6 +766,17 @@ body {
   gap: 20px;
   /* leaves an active link */
   /* underscore active link */
+}
+@media screen and (max-width: 767px) {
+  .site-nav {
+    gap: 284px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 @media screen and (min-width: 768px) {
   .site-nav {
