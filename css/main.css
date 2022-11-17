@@ -965,14 +965,20 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  display: none;
   width: 100%;
   height: 100%;
   background-color: var(--primary-white-color);
   padding: 48px 40px;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: var(--timing-function), -webkit-transform var(--transition-dur);
+  transition: var(--timing-function), -webkit-transform var(--transition-dur);
+  transition: transform var(--transition-dur), var(--timing-function);
+  transition: transform var(--transition-dur), var(--timing-function), -webkit-transform var(--transition-dur);
 }
 .mobile-menu.is-open {
-  display: block;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .mobile-nav-container {
@@ -983,7 +989,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 302px;
   margin-bottom: 64px;
 }
 
@@ -991,14 +996,15 @@ body {
   /* leaves an active link */
 }
 .mobile-nav__list {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 32px;
+  margin-bottom: 306px;
 }
 .mobile-nav__link {
   color: var(--title-text-color);
@@ -1047,23 +1053,22 @@ body {
 }
 
 .mobile-network {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  gap: 20px;
+  gap: 10px;
 }
 .mobile-network__link {
-  color: var(--title-text-color);
+  color: var(--accent-color);
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding: 10px;
   font-size: 18px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-}
-.mobile-network__link:hover, .mobile-network__link:focus {
-  color: var(--accent-color);
 }
 
 .menu-button {
@@ -1151,7 +1156,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
+  width: 450px;
   border-radius: 4px;
   padding: 40px;
   -webkit-transform: translate(-50%, -50%) scale(1);
@@ -1160,6 +1165,11 @@ body {
   transition: -webkit-transform 250ms var(--timing-function);
   transition: transform 250ms var(--timing-function);
   transition: transform 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 528px;
+  }
 }
 
 .close-button {
@@ -1194,10 +1204,16 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 12px;
+}
+@media screen and (min-width: 1200px) {
+  .contact-form__text {
+    font-size: 20px;
+    line-height: 1.15;
+  }
 }
 
 .form-label {
@@ -1323,11 +1339,17 @@ body {
   display: block;
   font-family: "Roboto";
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   cursor: pointer;
   padding-left: 36px;
+}
+@media screen and (min-width: 1200px) {
+  .checkbox__label {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 .checkbox__icon {
   content: "";
