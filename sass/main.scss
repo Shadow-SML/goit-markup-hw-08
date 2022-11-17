@@ -4,9 +4,9 @@
 @import "./base/container";
 
 @import "./components/about-section";
-@import "./components/backdrop";
-@import "./components/card-list";
-@import "./components/checkbox";
+
+@import "./components/cards-list";
+
 @import "./components/clients-section";
 @import "./components/header";
 @import "./components/features-section";
@@ -14,13 +14,12 @@
 @import "./components/footer-container";
 @import "./components/hero";
 @import "./components/logo";
-@import "./components/menu-button";
+
 @import "./components/mobile-menu";
 @import "./components/modal";
-@import "./components/modal-close-button";
-@import "./components/modal-form-field";
-@import "./components/modal-form-textarea";
-@import "./components/modal-button";
+
+
+
 @import "./components/primary-button";
 @import "./components/social-links";
 @import "./components/team-section";
