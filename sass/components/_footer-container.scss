@@ -19,7 +19,7 @@
     align-items: baseline;
 
     @media screen and (min-width: $desktop) {
-        align-items: flex-start;
+        align-items: baseline;
         flex-direction: row;
         gap: 93px;
     }
