@@ -11,6 +11,10 @@
     transform: translateX(100%);
     transition: transform var(--transition-dur), var(--timing-function);
     
+    @media screen and (max-width: 479px) {
+        max-width: 479px;
+    }
+
 
     &.is-open {
         transform: translateX(0);
@@ -20,7 +24,9 @@
 .mobile-nav-container {
     display: flex;
     flex-direction: column;
-    margin-bottom: 64px;
+    row-gap: 32px;
+    align-content: space-between;
+    margin-bottom: auto;
 }
 
 .mobile-nav{
@@ -28,8 +34,9 @@
     &__list {
         display: flex;
         flex-direction: column;
-        gap: 32px;
-        // margin-bottom: 306px;
+        row-gap: 32px;
+       
+
     }
     
         &__link {
@@ -56,9 +63,10 @@
 }
 
 .mobile-contacts-list {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     gap: 32px;
+    margin-bottom: 64px;
 
     &__mobile-link {
         color: var(--secondary-text-color);
@@ -89,16 +97,18 @@
 
 .mobile-network {
         display: flex;
+        flex-wrap: wrap;
         flex-direction: row;
-        justify-content: center;
-        gap: 10px;
+        // justify-content: center;
+        width: 100%;
+        column-gap: 5px;
         
         &__item:not(:last-child)::after {
             border-right: 1px solid rgba(33, 33, 33, 0.2);
             content: "";
             width: 22px;
             height: 0;
-            margin-left: 10px;
+            margin-left: 5px;
             border: 1px solid rgba(33,33,33,.2);
         }
 

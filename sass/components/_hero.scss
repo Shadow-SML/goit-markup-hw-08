@@ -11,8 +11,9 @@
             background-image: $hero-background-image-linear-gradient,
                 url("../img/hero-image-mobile.jpg");
     
-            width: 480px;
+            max-width: 480px;
             background-repeat: no-repeat;
+            background-position: center;
             background-size: cover;
             padding: 118px 0 118px 0;
     
@@ -32,6 +33,7 @@
             max-width: 768px;
             padding: 118px 0 118px 0;
             background-repeat: no-repeat;
+            background-position: center;
             background-size: cover;
     
     @media screen and (min-device-pixel-ratio: 2) and (min-width: $tablet),
