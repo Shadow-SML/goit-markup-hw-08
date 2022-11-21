@@ -16,6 +16,7 @@
 
     @media screen and (min-width: $desktop) {
         align-items: baseline;
+        justify-content: flex-start;
         flex-direction: row;
         gap: 93px;
     }
@@ -134,13 +135,14 @@
 
 .footer-form-container {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
     gap: 20px;
     width: 100%;
 
 @media screen and (min-width: $desktop) {
-        align-items: flex-start;
+        // align-items: flex-start;
+        width: 358px;
     }
 }
 
@@ -154,6 +156,7 @@
 
     @media screen and (min-width: $desktop) {
         flex-direction: row;
+        flex-wrap: nowrap;
         align-items: flex-start;
         gap: 12px;
         }
@@ -172,8 +175,12 @@
             padding: 15px 16px;
             cursor: pointer;
 
+        @media screen and (min-width: $tablet) {
+                width: 450px;
+            }
+
         @media screen and (min-width: $desktop) {
-                width: 358px;
+                min-width: 358px;
             }
         }
     
