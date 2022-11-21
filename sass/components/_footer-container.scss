@@ -135,14 +135,12 @@
 
 .footer-form-container {
     display: flex;
-    // align-items: flex-start;
     align-items: center;
     flex-direction: column;
     gap: 20px;
     width: 100%;
 
 @media screen and (min-width: $desktop) {
-        // align-items: flex-start;
         width: 358px;
     }
 }
