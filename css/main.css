@@ -658,6 +658,9 @@ body {
 @media screen and (min-width: 1200px) {
   .footer-form-container {
     width: 358px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 
