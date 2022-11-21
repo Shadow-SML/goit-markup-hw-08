@@ -5,10 +5,6 @@
     margin: 0 auto;
     height: auto;
     padding: 60px 0;
-
-    @media screen and (max-width: 767px) {
-            min-width: 480px;
-        }
 }
 
 .footer-box {
@@ -141,6 +137,7 @@
     align-items: center;
     flex-direction: column;
     gap: 20px;
+    width: 100%;
 
 @media screen and (min-width: $desktop) {
         align-items: flex-start;
@@ -152,6 +149,7 @@
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
+    width: 100%;
     gap: 20px;
 
     @media screen and (min-width: $desktop) {
@@ -169,7 +167,7 @@
             border-radius: 4px;
             display: block;
             width: 100%;
-            width: 450px;
+          
             height: 50px;
             padding: 15px 16px;
             cursor: pointer;
